@@ -1,4 +1,4 @@
-# 🚀 MT5 Trading API - Projeto Completo
+# 🚀 Meta Trader 5 API - Client & Server
 
 Sistema completo de trading com MetaTrader 5, implementado com **Clean Architecture** e **SOLID Principles**. Inclui servidor FastAPI e cliente Python para consumo em outras máquinas.
 
