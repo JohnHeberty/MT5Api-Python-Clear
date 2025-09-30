@@ -132,7 +132,7 @@ cp .env.example .env
 # =============================================================================
 # MetaTrader 5 Credentials (OBRIGATÓRIO)
 # =============================================================================
-USERCLEAR=1001585107                    # Seu login MT5
+USERCLEAR=1001585100                    # Seu login MT5
 PASSCLEAR=sua_senha_mt5                 # Sua senha MT5
 MT5_SERVER=ClearInvestimentos-CLEAR     # Servidor da corretora
 
@@ -141,7 +141,7 @@ MT5_SERVER=ClearInvestimentos-CLEAR     # Servidor da corretora
 # =============================================================================
 # BasicAuth para documentação (/docs)
 DOCS_USERNAME=homelab                   # Usuário para acessar docs
-DOCS_PASSWORD=john.1998                # Senha para acessar docs
+DOCS_PASSWORD=homelab123                # Senha para acessar docs
 
 # API Keys para endpoints (separadas por vírgula)
 API_KEYS=cb9c4299c9ac5437d74c22fad0314cc16e3615c4c802855fdc1287eb69dd57b4
@@ -149,7 +149,7 @@ API_KEYS=cb9c4299c9ac5437d74c22fad0314cc16e3615c4c802855fdc1287eb69dd57b4
 # =============================================================================
 # Server Configuration
 # =============================================================================
-HOST=0.0.0.0                          # IP do servidor
+HOST=0.0.0.0                           # IP do servidor
 PORT=8000                              # Porta do servidor
 LOG_LEVEL=info                         # Nível de log
 ```
@@ -179,7 +179,7 @@ curl http://localhost:8000/              # Info da API
 # 📚 Acessar documentação (BasicAuth requerido)
 # http://localhost:8000/docs
 # Usuário: homelab
-# Senha: john.1998
+# Senha: homelab123
 ```
 
 ### 🔍 **5. Logs do Servidor**
@@ -188,7 +188,7 @@ curl http://localhost:8000/              # Info da API
 ✅ MetaTrader5 disponível
 🚀 Iniciando MT5 Trading API...
 ✅ MT5 inicializado com sucesso  
-✅ Login realizado: 1001585107
+✅ Login realizado: 1001585100
 📊 Conta: SEU NOME
 💰 Saldo: 10000.00
 🔢 Alavancagem: 100x
@@ -202,7 +202,7 @@ INFO:     Uvicorn running on http://0.0.0.0:8000
 |---------|-----|--------------|
 | **API Info** | `http://localhost:8000/` | ❌ Pública |
 | **Health Check** | `http://localhost:8000/health` | ❌ Pública |
-| **Documentação** | `http://localhost:8000/docs` | ✅ BasicAuth (homelab/john.1998) |
+| **Documentação** | `http://localhost:8000/docs` | ✅ BasicAuth (homelab/homelab123) |
 | **API Endpoints** | `http://localhost:8000/GetSymbols/` | ✅ API Key (AcessKey header) |
 
 ---
@@ -215,14 +215,14 @@ O cliente permite consumir a API de **outras máquinas** com interface clean e t
 
 ```
 client/
-├── mt5_client/              # 📦 Pacote principal 
+├── mt5_client/             # 📦 Pacote principal 
 │   ├── domain/             # 🎯 Entidades e regras de negócio
 │   ├── application/        # 📋 Casos de uso
 │   ├── infrastructure/     # 🔧 HTTP adapters & config
 │   └── presentation/       # 🖥️ Interface pública
 ├── examples/               # 📚 Exemplos práticos
 ├── requirements.txt        # 📦 Dependências do cliente
-└── setup.py               # ⚙️ Instalação como pacote
+└── setup.py                # ⚙️ Instalação como pacote
 ```
 
 ### 🚀 **1. Instalação do Cliente**
@@ -577,7 +577,7 @@ asyncio.run(analise_avancada())
 #### **1. BasicAuth para Documentação**
 - **URL**: `/docs`, `/redoc`, `/openapi.json`
 - **Credenciais**: Configuráveis via `.env`
-- **Padrão**: `homelab` / `john.1998`
+- **Padrão**: `homelab` / `homelab123`
 - **Uso**: Proteger documentação Swagger/ReDoc
 
 #### **2. API Keys para Endpoints**  
@@ -678,7 +678,7 @@ RATE_LIMIT_WINDOW=60
 ❌ Credenciais não funcionam
 
 # Soluções
-✅ Usar credenciais: homelab / john.1998
+✅ Usar credenciais: homelab / homelab123
 ✅ Limpar cache do browser
 ✅ Tentar modo incógnito
 ✅ Verificar DOCS_USERNAME e DOCS_PASSWORD no .env
