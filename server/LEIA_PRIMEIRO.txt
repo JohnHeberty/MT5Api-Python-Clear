@@ -1,0 +1,44 @@
+🚀 COMO USAR - MetaTrader 5 API
+====================================
+
+💥 EXECUÇÃO ÚNICA:
+------------------
+   start.bat
+
+🌐 ACESSOS:
+-----------
+✅ API: http://localhost:8000
+✅ Docs: http://localhost:8000/docs  
+✅ Health: http://localhost:8000/health
+
+📋 ENDPOINTS PRINCIPAIS:
+------------------------
+GET  /GetSymbols/        → Lista símbolos disponíveis
+GET  /GetTickers/        → Preços em tempo real  
+GET  /GetAccountInfo/    → Informações da conta
+POST /SendOrder/         → Enviar ordens
+GET  /GetPositions/      → Posições abertas
+GET  /GetOrders/         → Ordens pendentes
+
+🔧 CONFIGURAÇÃO:
+----------------
+- Credenciais: Já configuradas no .env
+- Login MT5: Automático na inicialização
+- Servidor: Inicia automaticamente na porta 8000
+
+⚠️ REQUIREMENTS:
+----------------
+- MetaTrader 5 instalado
+- Python 3.8+
+- Apenas execute: start.bat
+
+✨ ARQUITETURA:
+---------------
+✅ Clean Architecture + SOLID
+✅ FastAPI com OpenAPI
+✅ Autenticação segura
+✅ Error handling global
+✅ Documentação automática
+
+🎯 TUDO FUNCIONANDO!
+====================

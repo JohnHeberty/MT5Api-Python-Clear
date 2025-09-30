@@ -1,0 +1,8 @@
+# MT5 Trading API - Requirements para Exemplos
+# Dependências necessárias para executar os exemplos
+
+# HTTP Client para comunicação com a API
+requests>=2.31.0
+
+# Opcional: Para formatação colorida no terminal
+colorama>=0.4.6

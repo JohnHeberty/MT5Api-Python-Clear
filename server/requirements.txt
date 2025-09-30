@@ -1,0 +1,23 @@
+# MT5 Trading API - Requirements
+# Arquivo único de dependências
+
+# Core FastAPI
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0
+
+# Data validation
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# MetaTrader 5
+MetaTrader5
+
+# Data processing (otimizado)
+numpy>=1.24.0
+
+# Environment and utilities
+python-dotenv>=1.0.0
+python-dateutil>=2.8.0
+
+# Security for BasicAuth
+python-multipart>=0.0.6
